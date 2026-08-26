@@ -1,0 +1,19 @@
+{
+  "name": "mietube",
+  "version": "1.0.0",
+  "description": "a professional backend project setup for a full-featured video hosting platform like - YouTube",
+  "keywords": [
+    "mongodb",
+    "express.js",
+    "node.js",
+    "mongoose",
+    "javascript"
+  ],
+  "license": "ISC",
+  "author": "Saurabh Joshi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
