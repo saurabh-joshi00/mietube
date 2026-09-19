@@ -20,4 +20,14 @@ app.use(express.static('public'));
 
 app.use(cookieParser());
 
+
+// Importing Routes
+import { router as userRouter } from "./routes/user.routes.js";
+
+
+// Declaring Routes
+app.use('/api/v1/users', userRouter);
+
+// Example of a Standard API URL Structure: http://localhost:3000/api/v1/users/register
+
 export { app };

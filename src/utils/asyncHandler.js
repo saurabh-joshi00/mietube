@@ -3,7 +3,7 @@
 
 // Method 1 - By using Promises
 const asyncHandler = (requestHandler) => {
-    (req, res, next) => {
+    return (req, res, next) => {
         Promise.resolve(requestHandler(req, res, next)).catch((error) => next(error));
     }
 }
@@ -30,6 +30,7 @@ export { asyncHandler };
 
 
 /* Breaking the "Higher Order Function" into steps:
+
     // Normal function
     -> const asyncHandler = () => {}
     
